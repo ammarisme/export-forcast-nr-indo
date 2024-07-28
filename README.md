@@ -1,4 +1,3 @@
-
 # Export Forecasting using Machine Learning and Deep Learning - Natural Rubber in Indonesia
 
 ## Project Goal
@@ -80,6 +79,29 @@ Contains various processed and raw input data files used for model training and 
 
 ### `trained_models`
 Stores the trained model files, including the latest ARIMA and RNN models.
+
+## Project Report Summary
+
+### Introduction
+The project aims to develop an AI-based tool to forecast natural rubber exports from Indonesia to aid shipping companies in route planning. The project addresses the need for accurate forecasting models due to market volatility caused by factors like geopolitical shifts and crude oil prices.
+
+### Literature Review
+The literature review explores domain-specific research on natural rubber and technical research on machine learning models suitable for time-series forecasting. It highlights the significance of macroeconomic factors and various neural network architectures.
+
+### Data Gathering and Analysis
+Data was collected from various web-based platforms, focusing on parameters like export volumes, prices, and weather conditions. The analysis revealed significant relationships between factors like temperature, crude oil prices, and export volumes.
+
+### Methodology
+The project follows an iterative development approach, with frequent stakeholder feedback. The forecasting models include ARIMA, RNN, and Transformer architectures, evaluated based on their performance in predicting export volumes.
+
+### Implementation
+The implementation covers data preprocessing, model training, and development of web and mobile applications for visualizing the forecasts. The project utilizes libraries and frameworks like TensorFlow and Pytorch.
+
+### Evaluation
+The models are evaluated using both quantitative metrics (e.g., R2 value) and qualitative feedback from stakeholders. The RNN model decoded by ARIMA showed the best performance.
+
+### Conclusion
+The project successfully developed a forecasting tool with potential applications in the logistics and shipping industries. Future enhancements could include expanding the model to cover other regions and integrating more data sources.
 
 ## Summary
 The repository focuses on forecasting the export of natural rubber in Indonesia using various machine learning and deep learning techniques. It includes data cleaning, preprocessing, model training, evaluation, and result analysis using ARIMAX, RNN, and Transformer models.
