@@ -1,17 +1,85 @@
-This project is dedicated to forecasting the Natural Rubber (NR) industry using advanced machine learning techniques. Here’s a detailed summary based on the notebooks and content found in the repository:
 
-**Data Cleaning and Preprocessing:
-**
-HS_code_Cleaning.ipynb and NR_Cleaning.ipynb: These notebooks focus on cleaning the datasets related to HS codes and Natural Rubber. They handle missing values, standardize data formats, and prepare the data for further analysis.
-**Dataset Exploration:
-**
-NR_Dataset Explore.ipynb and NR_Dataset.ipynb: These notebooks are used for exploring the datasets. They provide visualizations and statistical summaries to understand the distribution and relationships within the data, which are crucial for building accurate forecasting models.
-**Model Training:
-**
-RNN_NRNet.ipynb: Implements a Recurrent Neural Network (RNN) for forecasting NR exports. RNNs are well-suited for time series data due to their ability to maintain temporal dependencies.
-Transformer_NRNet.ipynb: Utilizes Transformer models, which have shown superior performance in various time series forecasting tasks due to their attention mechanism that captures long-term dependencies more effectively.
-Attention_NRNet.ipynb: This notebook focuses on models with attention mechanisms, which help improve the prediction accuracy by focusing on the most relevant parts of the input sequence.
-Analysis of Results:
+# Export Forecasting using Machine Learning and Deep Learning - Natural Rubber in Indonesia
 
-NR_result_analysis.ipynb: This notebook is dedicated to analyzing the performance of the models. It compares the predictions against actual values and uses metrics like MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) to evaluate model accuracy.
-The project comprehensively covers the entire pipeline from data cleaning to model evaluation, showcasing the use of various state-of-the-art techniques in time series forecasting. 
+## Project Goal
+Forecast the export of natural rubber in Indonesia using machine learning and deep learning models.
+
+## Directory Structure
+```
+|-- ARIMAX.ipynb
+|-- Attention_NRNet.ipynb
+|-- HS_code_Cleaning.ipynb
+|-- NR_Cleaning.ipynb
+|-- NR_Dataset Explore.ipynb
+|-- NR_Dataset.ipynb
+|-- NR_Synthesis.ipynb
+|-- NR_result_analysis.ipynb
+|-- README.md
+|-- RNN_NRNet.ipynb
+|-- Transformer_NRNet.ipynb
+|-- input_mix
+    |-- validation
+        |-- cleaned
+            |-- DATA-25_seq.csv
+        |-- processed_seq2seq_12_12
+            |-- pre_filter.pt
+            |-- pre_transform.pt
+            |-- processed.dt
+        |-- processed_seq2seq_6_1
+            |-- pre_filter.pt
+            |-- pre_transform.pt
+            |-- processed.dt
+        |-- processed_seq2seq_6_6
+            |-- pre_filter.pt
+            |-- pre_transform.pt
+            |-- processed.dt
+        |-- raw
+            |-- DATA_25_04.csv
+|-- trained_models
+    |-- ARIMA_latest.pickle
+    |-- RNN_latest.model
+    |-- RNN_latest.optim
+```
+
+## Notebooks
+
+### `ARIMAX.ipynb`
+This notebook implements the ARIMAX model to forecast natural rubber exports. It includes data preprocessing, model definition, training, and evaluation.
+
+### `Attention_NRNet.ipynb`
+This notebook implements an Attention-based Neural Network model. It includes data preprocessing, model definition, training, and evaluation.
+
+### `HS_code_Cleaning.ipynb`
+This notebook focuses on cleaning HS code data related to natural rubber exports.
+
+### `NR_Cleaning.ipynb`
+This notebook performs cleaning operations on the natural rubber dataset to prepare it for analysis and modeling.
+
+### `NR_Dataset Explore.ipynb`
+This notebook explores the natural rubber dataset, providing insights and visualizations of the data.
+
+### `NR_Dataset.ipynb`
+This notebook combines and preprocesses the natural rubber dataset from various sources.
+
+### `NR_Synthesis.ipynb`
+This notebook synthesizes additional data points to augment the natural rubber dataset.
+
+### `NR_result_analysis.ipynb`
+This notebook analyzes the results of the different models applied to forecast natural rubber exports.
+
+### `RNN_NRNet.ipynb`
+This notebook implements an RNN-based Neural Network model for forecasting. It includes data preprocessing, model definition, training, and evaluation.
+
+### `Transformer_NRNet.ipynb`
+This notebook implements a Transformer-based Neural Network model. It includes data preprocessing, model definition, training, and evaluation.
+
+## Directories
+
+### `input_mix`
+Contains various processed and raw input data files used for model training and validation.
+
+### `trained_models`
+Stores the trained model files, including the latest ARIMA and RNN models.
+
+## Summary
+The repository focuses on forecasting the export of natural rubber in Indonesia using various machine learning and deep learning techniques. It includes data cleaning, preprocessing, model training, evaluation, and result analysis using ARIMAX, RNN, and Transformer models.
